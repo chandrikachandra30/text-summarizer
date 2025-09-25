@@ -1,7 +1,7 @@
 # 🤖 AI Text Summarizer
 
-> **Live Demo**: [Coming Soon - Deploy to Streamlit Cloud]
-> **Status**: 🌟 Ready for Deployment
+> **🚀 Live Demo**: [**Try the Text Summarizer Here!**](https://text-summarizer-9f2h.onrender.com)
+> **Status**: ✅ Deployed on Render.com
 
 An advanced NLP project for summarizing text using state-of-the-art transformer models with a beautiful web interface.
 
@@ -15,6 +15,10 @@ An advanced NLP project for summarizing text using state-of-the-art transformer 
 - ✨ **Example Texts**: Pre-loaded samples for quick testing
 
 ## 🚀 Quick Start
+
+### 🌐 Access Live Demo
+
+**No installation needed!** Simply visit: **[https://text-summarizer-9f2h.onrender.com](https://text-summarizer-9f2h.onrender.com)**
 
 ### Local Development
 
@@ -32,7 +36,17 @@ streamlit run app.py
 
 ### 🌍 Live Deployment Options
 
-#### 1. Streamlit Community Cloud (Recommended)
+#### ✅ 1. Render.com (Currently Deployed)
+
+**Live URL**: [https://text-summarizer-9f2h.onrender.com](https://text-summarizer-9f2h.onrender.com)
+
+1. Connect your GitHub repository to [render.com](https://render.com)
+2. Create a new Web Service
+3. Use the following settings:
+   - **Build Command**: `pip install -r requirements.txt`
+   - **Start Command**: `streamlit run app.py --server.port $PORT --server.address 0.0.0.0`
+
+#### 2. Streamlit Community Cloud
 
 1. Fork this repository
 2. Go to [share.streamlit.io](https://share.streamlit.io/)
@@ -42,24 +56,16 @@ streamlit run app.py
 
 **Deployment URL**: `https://share.streamlit.io/[your-username]/text-summarizer/main/app.py`
 
-#### 2. Hugging Face Spaces
+#### 3. Hugging Face Spaces
 
 1. Create a new Space on [huggingface.co/spaces](https://huggingface.co/spaces)
 2. Choose "Streamlit" as the SDK
 3. Upload the repository files
 4. Your app will be live at: `https://huggingface.co/spaces/[username]/text-summarizer`
 
-#### 3. Render.com
-
-1. Connect your GitHub repository to [render.com](https://render.com)
-2. Create a new Web Service
-3. Use the following settings:
-   - **Build Command**: `pip install -r requirements.txt`
-   - **Start Command**: `streamlit run app.py --server.port $PORT --server.address 0.0.0.0`
-
 #### 4. Railway
 
-1. Connect to [railway.app](https://railway.app)
+1. Connect to [railway.app](https://railway.app/)
 2. Deploy from GitHub repository
 3. Add environment variables if needed
 4. Your app will be automatically deployed
@@ -77,20 +83,20 @@ main()
 
 ## 📦 Dependencies
 
-- `torch>=1.9.0` - PyTorch for deep learning
-- `transformers>=4.20.0` - Hugging Face transformers
-- `streamlit>=1.25.0` - Web interface framework
-- `numpy>=1.21.0` - Numerical computing
-- `nltk>=3.7` - Natural language toolkit
-- `scikit-learn>=1.0.0` - Machine learning utilities
+- **torch>=1.9.0** - PyTorch for deep learning
+- **transformers>=4.20.0** - Hugging Face transformers
+- **streamlit>=1.25.0** - Web interface framework
+- **numpy>=1.21.0** - Numerical computing
+- **nltk>=3.7** - Natural language toolkit
+- **scikit-learn>=1.0.0** - Machine learning utilities
 
-See `requirements.txt` for the complete list.
+See requirements.txt for the complete list.
 
 ## 🔧 Configuration
 
-Customize the app behavior by modifying these parameters in `app.py`:
+Customize the app behavior by modifying these parameters in app.py:
 
-- **Model**: Currently using `facebook/bart-large-cnn`
+- **Model**: Currently using facebook/bart-large-cnn
 - **Max Length**: Default 130 words (adjustable via UI)
 - **Min Length**: Default 30 words (adjustable via UI)
 
@@ -123,6 +129,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - GitHub: [@chandrikachandra30](https://github.com/chandrikachandra30)
 - Repository: [text-summarizer](https://github.com/chandrikachandra30/text-summarizer)
 
----
-
-**Built with ❤️ using Streamlit and Transformers**
+Built with ❤️ using Streamlit and Transformers
